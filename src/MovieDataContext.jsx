@@ -5,8 +5,9 @@ const MovieContext = createContext()
 
 export const MovieProvider = ({ children }) => {
     const [isData, setIsData] = useState(Data)
+    const [trailer, setTrailer] = useState('')
     return (
-        <MovieContext.Provider value={{ isData, setIsData }} >
+        <MovieContext.Provider value={{ isData, setIsData, trailer, setTrailer }} >
             {children}
         </MovieContext.Provider >
     )

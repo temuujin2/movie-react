@@ -4,16 +4,20 @@ import { useState } from 'react';
 import { MovieDataContext1 } from "../newContext"
 import ReactPlayer from 'react-player'
 import Popup from './Popup';
+import { MovieDataContext } from '../MovieDataContext';
 
 export const Home = ({ data }) => {
     const navigate = useNavigate();
     const [isActive, setIsActive] = useState(false);
-    const { isData1, setIsData1 } = MovieDataContext1()
+    const { setIsData1 } = MovieDataContext1()
+    const { setTrailer } = MovieDataContext()
+    
 
     const [isOpen, setIsOpen] = useState(false);
  
-  const togglePopup = () => {
+  const togglePopup = (e) => {
     setIsOpen(!isOpen);
+    setTrailer(e)
   }
 
     if (isActive) return navigate('/Booking');
@@ -29,7 +33,7 @@ export const Home = ({ data }) => {
             <div className='father-grid'>
 
                 {Data && Data.map(data => {
-                    let arr = [data.name, data.kind, data.imageUrl, data.time, data.content]
+                    let arr = [data.name, data.kind, data.imageUrl, data.time, data.content, data.trailer]
                     return (
                         <div className='grid'>
                             <img src={data.imageUrl} className='poster'></img>
@@ -58,8 +62,13 @@ export const Home = ({ data }) => {
                                         {isOpen && <Popup
                                           content={<>
                                             <b>Design your Popup</b>
-                                            Төрөл: {data.name}
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <video>{data.trailer}</video>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                                                deserunt mollit anim id est laborum.</p>
                                             <button>Test button</button>
                                           </>}
                                           handleClose={togglePopup}
