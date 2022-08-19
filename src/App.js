@@ -1,25 +1,72 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import Data from './data/MovieData2.json'
 
-function App() {
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link, Routes
+} from "react-router-dom";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Booking } from "./pages/Booking";
+import { Coming } from "./pages/Coming";
+
+
+export default function App() {
+  
+
+  // const AddMovieData = () => {
+
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='main'>
+
+
+        <nav>
+          <div className='logo'>
+            <b>MOVIE<span>leap</span></b>
+            <p>ENTERTAIMENT</p>
+
+          </div>
+
+          <ul>
+            <li>
+              <Link to="/home">Нүүр</Link>
+            </li>
+            <li>
+              <Link to="/about">Тун удахгүй</Link>
+            </li>
+            <li>
+              <Link to="/booking">Захиалга</Link>
+            </li>
+            <li>
+              <Link to="/coming">Холбоо барих</Link>
+            </li>
+          </ul>
+          <div>
+            <input type="searchbox" placeholder='Search...'></input>
+          </div>
+        </nav>
+        <div className='video-main'>
+
+        </div>
+        <Routes>
+          <Route path="/Booking" element={<Booking data={Data} />} />
+          <Route path="/Home" element={<Home data={Data} />} />
+
+          <Route path="/About" element={<About />} />
+          <Route path="/Coming" element={<Coming />} />
+        </Routes>
+
+        
+
+
+      </div>
+    </>
   );
 }
-
-export default App;
