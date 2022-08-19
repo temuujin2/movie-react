@@ -6,7 +6,6 @@ import Data from './data/MovieData2.json'
 
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link, Routes
 } from "react-router-dom";

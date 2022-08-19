@@ -37,6 +37,7 @@ nav {
   top: 30px;
   display: flex;
   width: 80vw;
+  max-width: 1200px;
   margin: auto;
   justify-content: space-between;
 }
@@ -123,6 +124,12 @@ nav ul li a:hover {
   height: 34px;
   margin-top: -35px;
 }
+.btn-s2 {
+  border: none;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
 .grid button {
   position: absolute;
   bottom: 0;  
@@ -132,6 +139,8 @@ nav ul li a:hover {
   border: none;
   color: white;
 }
+
+
 .kind {
   font-size: 14px;
   margin-top: -5px;
