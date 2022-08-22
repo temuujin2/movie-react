@@ -9,18 +9,14 @@ import { MovieDataContext } from '../MovieDataContext';
 export const Home = ({ data }) => {
     const navigate = useNavigate();
     const [isActive, setIsActive] = useState(false);
+    const [isActive1, setIsActive1] = useState(false);
     const { setIsData1 } = MovieDataContext1()
-    const { setTrailer } = MovieDataContext()
     
 
-    const [isOpen, setIsOpen] = useState(false);
  
-  const togglePopup = (e) => {
-    setIsOpen(!isOpen);
-    setTrailer(e)
-  }
 
     if (isActive) return navigate('/Booking');
+    if (isActive1) return navigate('/Coming');
     return (
         <div className='main2'>
             <div className='video-box'>
@@ -33,7 +29,10 @@ export const Home = ({ data }) => {
             <div className='father-grid'>
 
                 {Data && Data.map(data => {
-                    let arr = [data.name, data.kind, data.imageUrl, data.time, data.content, data.trailer]
+                    let arr = [data.name, data.kind, data.imageUrl, 
+                               data.time, data.content, data.trailer, 
+                               data.time1, data.time2, data.time3, data.time4,
+                               data.back]
                     return (
                         <div className='grid'>
                             <img src={data.imageUrl} className='poster'></img>
@@ -50,30 +49,12 @@ export const Home = ({ data }) => {
                             <div className='btn-s'>
 
                                 <button onClick={() => { setIsData1(arr); setIsActive(true) }} style={{ left: "10px", background: "rgb(0, 174, 255)" }}>
-                                    Дэлгэрэнгүй...
+                                    Дэлгэрэнгүй
                                 </button>
 
-                                <div className='btn-s2'>
-                                    <input
-                                          type="button"
-                                          value="Trailer"
-                                          onClick={togglePopup}
-                                        />
-                                        {isOpen && <Popup
-                                          content={<>
-                                            <b>Design your Popup</b>
-                                            <video>{data.trailer}</video>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                                                deserunt mollit anim id est laborum.</p>
-                                            <button>Test button</button>
-                                          </>}
-                                          handleClose={togglePopup}
-                                        />}
-                                </div>
+                                <button className='btn-s2' onClick={() => { setIsData1(arr); setIsActive1(true) }}>
+                                        Захиалах
+                                </button>
                                 
                             </div>
                         </div>

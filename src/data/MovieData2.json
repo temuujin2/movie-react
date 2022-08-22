@@ -8,7 +8,12 @@
         "trailer": "https://www.youtube.com/watch?v=1jkw2JPCl18",
         "content": [
             "Krypto the Super-Dog and Superman are inseparable best friends, sharing the same superpowers and fighting crime side by side in Metropolis. However, Krypto must master his own powers for a rescue mission when Superman is kidnapped."
-        ]
+        ],
+        "time1": "10:00",
+        "time2": "13:50",
+        "time3": "17:10",
+        "time4": "22:00",
+        "back": "https://cdn.vox-cdn.com/thumbor/C-LkHx6-N1TG7acl5BKz-qpf6M8=/0x0:2342x1200/1200x675/filters:focal(679x189:1053x563)/cdn.vox-cdn.com/uploads/chorus_image/image/71179254/rev_1_DCSP_FP_0096_High_Res_JPEG.0.jpeg"
     },
     {
         "id": 2,
@@ -19,7 +24,12 @@
         "trailer": "https://www.youtube.com/watch?v=2Zod_542vPQ",
         "content": [
             "Hank, a loveable dog with a head full of dreams about becoming a samurai, sets off in search of his destiny."
-        ]
+        ],
+        "time1": "11:40",
+        "time2": "14:50",
+        "time3": "18:30",
+        "time4": "23:10",
+        "back": "https://static01.nyt.com/images/2022/07/14/arts/14paws-of-fury/merlin_209772357_c785dcad-2dd1-496f-b60b-7457b8c716a7-videoSixteenByNineJumbo1600.jpg"
     },
     {
         "id": 3,
@@ -30,7 +40,12 @@
         "trailer": "https://www.youtube.com/watch?v=6DxjJzmYsXo",
         "content": [
             "The untold story of one twelve-year-old's dream to become the world's greatest supervillain."
-        ]
+        ],
+        "time1": "09:40",
+        "time2": "12:50",
+        "time3": "16:30",
+        "time4": "19:10",
+        "back": "https://www.thedigitalfix.com/wp-content/uploads/2022/06/minions-2-rise-of-gru-1.jpg" 
     },
     {
         "id": 4,
@@ -41,7 +56,12 @@
         "trailer": "https://www.youtube.com/watch?v=Go8nTmfrQd8",
         "content": [
             "Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct."
-        ]
+        ],
+        "time1": "09:40",
+        "time2": "12:50",
+        "time3": "16:30",
+        "time4": "19:10",
+        "back": "https://bozosports.com/wp-content/uploads/2022/07/thor18.jpeg"
     },
     {
         "id": 5,
@@ -52,7 +72,12 @@
         "trailer": "https://www.youtube.com/watch?v=rnzcDOJkb2w",
         "content": [
             "Five assassins aboard a fast moving bullet train find out their missions have something in common."
-        ]
+        ],
+        "time1": "10:30",
+        "time2": "12:40",
+        "time3": "15:50",
+        "time4": "20:10",
+        "back": "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/07/Brad-Pitt-Bullet-Train-Dolby-Poster.jpg"
     },
     {
         "id": 6,
@@ -63,7 +88,12 @@
         "trailer": "https://www.youtube.com/watch?v=411vqNprElg",
         "content": [
             "A truck driver has been forced to smuggle illicit cargo to save her brother from a deadly prison gang. With FBI operatives hot on her trail, Sally's conscience is challenged when the final package turns out to be a teenage girl."
-        ]
+        ],
+        "time1": "11:00",
+        "time2": "13:50",
+        "time3": "16:30",
+        "time4": "19:30",
+        "back": "https://i.ytimg.com/vi/vP6Amc2UMuo/maxresdefault.jpg"
     },
     {
         "id": 7,
@@ -74,7 +104,12 @@
         "trailer": "https://www.youtube.com/watch?v=Z70CNV31Uqc",
         "content": [
             "Нэр нөлөө бүхий УИХ-ын гишүүний хамгийн ойрын шадар болох алдартай бизнесмений ганц хүү бол дээдсийн хүрээлэнгийн цуутай сайхан залуусын нэг. Гэтэл тэр байдаг л нэг хөгжимчний охинд дурлана. Хүүгийнх нь сонголт эцэгт нь таалагдсангүй. Эцэг нь өөрийнхөө зүтгэдэг УИХ-ын гишүүний нийгэмд шуугиан тариад байгаа секс скандалыг хаацайлахын тулд хүний санаанд багтамгүй башир арга сэдээд байлаа."
-        ]
+        ],
+        "time1": "11:10",
+        "time2": "13:30",
+        "time3": "16:30",
+        "time4": "18:10",
+        "back": "https://i.ytimg.com/vi/Z70CNV31Uqc/maxresdefault.jpg"
     },
     {
         "id": 8,
@@ -85,6 +120,11 @@
         "trailer": "https://www.youtube.com/watch?v=ycY1pUmCbaQ",
         "content": [
             "Two best friends and roommates are terrified by the vengeful spirits dwelling in their apartment. Based on the novel published by Kobunsha and written by Nanami Kamon."
-        ]
+        ],
+        "time1": "10:10",
+        "time2": "13:30",
+        "time3": "16:10",
+        "time4": "20:30",
+        "back": "https://otakukart.com/wp-content/uploads/2022/04/Room-203-feature.jpeg"
     }
 ]
