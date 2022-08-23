@@ -178,17 +178,15 @@ nav ul li a:hover {
 }
 /* ============== Coming page ==================== */
 .main-box-coming {
-  position: relative;
   display: flex;
   justify-content: center;
 }
 .main-box-coming h2 {
-  z-index: 1;
   position: absolute;
   color: white;
-  font-size: 40px;
-  top: 170px;
-  margin-right: 700px;
+  width: 600px;
+  font-size: 30px;
+  background: rgb(26, 28, 42);
 }
 .top-banner {
   position: relative;
@@ -216,7 +214,8 @@ nav ul li a:hover {
   max-width: 1200px;
   height: 600px;
   background: rgb(15, 16, 24);
-  top: 300px;
+  background-image: linear-gradient(to bottom,rgb(26, 28, 42), rgb(26, 28, 42), rgb(15, 16, 24) ,rgb(15, 16, 24));
+  top: 200px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -226,18 +225,21 @@ nav ul li a:hover {
   height: 100%;
   /* background: rgb(77, 0, 0); */
 }
+
+
 /* ---------- right side -------- */
 .right-side {
   width: 50%;
   height: 100%;
+  padding: 80px;
   /* background: goldenrod; */
 }
 /* ---------- times ------------- */
 .times {
   z-index: 1;
   position: absolute;
-  top: 230px;
-  margin-left: 650px;
+  top: 30px;
+  margin-left: 670px;
   display: flex;
   gap: 20px;
   text-align: center;
@@ -298,3 +300,5 @@ nav ul li a:hover {
   border: 1px solid #999;
   font-size: 20px;
 } */
+
+/* ------------------ Seat booking ---------------- */

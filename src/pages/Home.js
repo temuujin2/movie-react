@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MovieDataContext1 } from "../newContext"
 import ReactPlayer from 'react-player'
-import Popup from './Popup';
 import { MovieDataContext } from '../MovieDataContext';
 
 export const Home = ({ data }) => {
