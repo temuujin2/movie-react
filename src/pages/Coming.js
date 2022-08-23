@@ -85,9 +85,21 @@ export function Coming() {
                             
                             <input type="text" placeholder="Имэйл:"/>
                           </label>
+
+                          <label>
+                            
+                            <input type="text" placeholder="Том хүн"/>
+                          </label>
+                          <label>
+                            
+                            <input type="text" placeholder="Хүүхэд"/>
+                          </label>
                           <input type="submit" />
+
+                          
                         </form>
                         </div>
+                        <button>Next</button>
                     </div>
                 <div className="right-side">
                         
