@@ -70,35 +70,52 @@ export function Coming() {
             </div>
                 <div className="left-side">
                 <h2>{isData1[0]}</h2>
+                    <div className="left-inside">
+                    
+                    <img src={isData1[2]}></img>
+                        <form>
+                          <label>
+                            <input type="text" placeholder="Нэр:" />
+                          </label>
+                          <label>
+                            
+                            <input type="text" placeholder="Утас:"/>
+                          </label>
+                          <label>
+                            
+                            <input type="text" placeholder="Имэйл:"/>
+                          </label>
+                          <input type="submit" />
+                        </form>
+                        </div>
                     </div>
                 <div className="right-side">
                         
                     <div className="App">
-      <Movies
-        movie={selectedMovie}
-        onChange={movie => {
-          setSelectedSeats([])
-          setSelectedMovie(movie)
-        }}
-      />
-      <ShowCase />
-      <Cinema
-        movie={selectedMovie}
-        selectedSeats={selectedSeats}
-        onSelectedSeatsChange={selectedSeats => setSelectedSeats(selectedSeats)}
-      />
+                        <Movies
+                            movie={selectedMovie}
+                            onChange={movie => {
+                              setSelectedSeats([])
+                              setSelectedMovie(movie)
+                            }}
+                        />
+                        <ShowCase />
+                        <Cinema
+                          movie={selectedMovie}
+                          selectedSeats={selectedSeats}
+                          onSelectedSeatsChange={selectedSeats => setSelectedSeats(selectedSeats)}
+                        />
 
-      <p className="info">
-        Таны сонгосон суудал <span className="count">{selectedSeats.length}</span>{' '}
-        Суудлын нийт төлөлт{' '}
-        <span className="total">
-          {selectedSeats.length * selectedMovie.price}₮
-        </span>
-      </p>
-    </div>
+                        <p className="info">
+                          Таны сонгосон суудал <span className="count">{selectedSeats.length}</span>{' '}
+                          Суудлын нийт төлөлт{' '}
+                          <span className="total">
+                            {selectedSeats.length * selectedMovie.price}₮
+                          </span>
+                        </p>
                     </div>
-
-                    
+                </div>
+                            
             </div>
         </div>
     )
