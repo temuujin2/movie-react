@@ -51,9 +51,28 @@ const seats = Array.from({ length: 8 * 8 }, (_, i) => i)
 
 
 export function Coming() {
+    // ---------- select seat useState --------------------------->
     const [selectedMovie, setSelectedMovie] = useState(movies[0])
     const [selectedSeats, setSelectedSeats] = useState([])
+    // ---------- data Context ----------------------------------->
     const { isData1, setIsData1 } = MovieDataContext1()
+    // ----------  form useState --------------------------------->
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [list, setList] = useState([])
+    
+    const handleSubmit=(e) => {
+      e.preventDefault();
+      console.log(name, email, phone)
+      const date = {name, email, phone}
+      if(name&&email&&phone) {
+        setList((ls)=>[...ls, date])
+        setName('')
+        setPhone('')
+        setEmail('')
+      }
+    }
     return (
         <div className="main-box-coming">
             
@@ -73,17 +92,17 @@ export function Coming() {
                     <div className="left-inside">
                     
                     <img src={isData1[2]}></img>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                           <label>
-                            <input type="text" placeholder="Нэр:" />
+                            <input type="text" placeholder="Нэр:" value={name} onChange={(e)=> setName(e.target.value)}/>
                           </label>
                           <label>
                             
-                            <input type="text" placeholder="Утас:"/>
+                            <input type="text" placeholder="Утас:" value={phone} onChange={(e)=> setPhone(e.target.value)}/>
                           </label>
                           <label>
                             
-                            <input type="text" placeholder="Имэйл:"/>
+                            <input type="text" placeholder="Имэйл:" value={email} onChange={(e)=> setEmail(e.target.value)}/>
                           </label>
 
                           <label>
@@ -94,12 +113,13 @@ export function Coming() {
                             
                             <input type="text" placeholder="Хүүхэд"/>
                           </label>
-                          <input type="submit" />
+                          <button>Add</button>
+                          
 
                           
                         </form>
                         </div>
-                        <button>Next</button>
+                        
                     </div>
                 <div className="right-side">
                         
@@ -118,14 +138,23 @@ export function Coming() {
                           onSelectedSeatsChange={selectedSeats => setSelectedSeats(selectedSeats)}
                         />
 
-                        <p className="info">
-                          Таны сонгосон суудал <span className="count">{selectedSeats.length}</span>{' '}
+                        
+                    </div>
+                    <p className="info">
+                          <li>Таны сонгосон суудал <span className="count">{selectedSeats.length}</span></li>{' '}
                           Суудлын нийт төлөлт{' '}
                           <span className="total">
                             {selectedSeats.length * selectedMovie.price}₮
                           </span>
+                          <div>
+                          {list.map((a)=><div>
+                             <li>Захиалагчийн нэр: <span>{a.name}</span></li>
+                             <li>Захиалагчийн утас: <span>{a.phone}</span></li>
+                             <li>Захиалагчийн имэйл: <span>{a.email}</span></li>
+                          </div>)}
+                        </div>
                         </p>
-                    </div>
+
                 </div>
                             
             </div>

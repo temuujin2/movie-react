@@ -206,7 +206,7 @@ nav ul li a:hover {
   display: flex;
   width: 80vw;
   max-width: 1200px;
-  height: 600px;
+  height: fit-content;
   background: rgb(15, 16, 24);
   background-image: linear-gradient(to bottom,rgb(26, 28, 42), rgb(26, 28, 42), rgb(15, 16, 24) ,rgb(15, 16, 24));
   top: 200px;
