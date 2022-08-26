@@ -23,12 +23,12 @@ const movies = [
     {
       name: 'THOR: Love and Thunder',
       price: 8000,
-      occupied: [10, 12, 11, 20, 9, 2],
+      occupied: [10, 5, 2, 4, 9, 22],
     },
     {
       name: 'Bullet Train IMAX',
       price: 7900,
-      occupied: [10, 12, 50, 33, 28, 47],
+      occupied: [20, 12, 13, 14, 21, 22],
     },
     {
       name: 'Paradise Highway',
@@ -38,12 +38,12 @@ const movies = [
     {
       name: 'Саран Хийл',
       price: 8000,
-      occupied: [10, 12, 50, 33, 28, 47],
+      occupied: [9, 41, 35, 11, 65, 26],
     },
     {
       name: 'Room 203',
       price: 7200,
-      occupied: [10, 12, 50, 33, 28, 47],
+      occupied: [5, 6, 10, 20, 21, 22],
     }
   ]
   
@@ -113,7 +113,7 @@ export function Coming() {
                             
                             <input type="text" placeholder="Хүүхэд"/>
                           </label>
-                          <button>Add</button>
+                          <button>Мэдээлэл оруулах</button>
                           
 
                           

@@ -1,7 +1,7 @@
-import { MovieDataContext } from "../MovieDataContext"
+
 import { MovieDataContext1 } from "../newContext"   
 export function Booking() {
-    const { isData } = MovieDataContext();
+
     const { isData1, setIsData1 } = MovieDataContext1()
     return (
         <>
