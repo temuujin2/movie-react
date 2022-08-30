@@ -54,6 +54,7 @@ export function Coming() {
     // ---------- select seat useState --------------------------->
     const [selectedMovie, setSelectedMovie] = useState(movies[0])
     const [selectedSeats, setSelectedSeats] = useState([])
+    const [time, setTime] = useState()
     // ---------- data Context ----------------------------------->
     const { isData1, setIsData1 } = MovieDataContext1()
     // ----------  form useState --------------------------------->
@@ -82,7 +83,7 @@ export function Coming() {
             </div>
             <div className="box-c1">
             <div className="times">
-                <div className="time ">{isData1[6]}</div>
+                <button className="time" onClick={()=> setTime()}>{isData1[6]}</button>
                 <div className="time ">{isData1[7]}</div>
                 <div className="time ">{isData1[8]}</div>
                 <div className="time ">{isData1[9]}</div>
