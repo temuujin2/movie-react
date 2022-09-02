@@ -31,7 +31,7 @@ export const Home = ({ data }) => {
                     let arr = [data.name, data.kind, data.imageUrl, 
                                data.time, data.content, data.trailer, 
                                data.time1, data.time2, data.time3, data.time4,
-                               data.back]
+                               data.back, data.movieName, data.price, data.occupied]
                     return (
                         <div className='grid'>
                             <img src={data.imageUrl} className='poster'></img>

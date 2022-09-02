@@ -13,7 +13,10 @@
         "time2": "13:50",
         "time3": "17:10",
         "time4": "22:00",
-        "back": "https://cdn.vox-cdn.com/thumbor/C-LkHx6-N1TG7acl5BKz-qpf6M8=/0x0:2342x1200/1200x675/filters:focal(679x189:1053x563)/cdn.vox-cdn.com/uploads/chorus_image/image/71179254/rev_1_DCSP_FP_0096_High_Res_JPEG.0.jpeg"
+        "back": "https://cdn.vox-cdn.com/thumbor/C-LkHx6-N1TG7acl5BKz-qpf6M8=/0x0:2342x1200/1200x675/filters:focal(679x189:1053x563)/cdn.vox-cdn.com/uploads/chorus_image/image/71179254/rev_1_DCSP_FP_0096_High_Res_JPEG.0.jpeg",
+        "movieName": "Super Pets",
+        "price": "7000",
+        "occupied": [20, 21, 30, 1, 2, 8]
     },
     {
         "id": 2,
@@ -29,7 +32,10 @@
         "time2": "14:50",
         "time3": "18:30",
         "time4": "23:10",
-        "back": "https://static01.nyt.com/images/2022/07/14/arts/14paws-of-fury/merlin_209772357_c785dcad-2dd1-496f-b60b-7457b8c716a7-videoSixteenByNineJumbo1600.jpg"
+        "back": "https://static01.nyt.com/images/2022/07/14/arts/14paws-of-fury/merlin_209772357_c785dcad-2dd1-496f-b60b-7457b8c716a7-videoSixteenByNineJumbo1600.jpg",
+        "movieName": "Самуурайн Түүх",
+        "price": 8000,
+        "occupied": [9, 41, 35, 11, 65, 26]
     },
     {
         "id": 3,
@@ -45,7 +51,10 @@
         "time2": "12:50",
         "time3": "16:30",
         "time4": "19:10",
-        "back": "https://www.thedigitalfix.com/wp-content/uploads/2022/06/minions-2-rise-of-gru-1.jpg" 
+        "back": "https://www.thedigitalfix.com/wp-content/uploads/2022/06/minions-2-rise-of-gru-1.jpg",
+        "movieName": "Minoins 2: The Rise of Gru",
+        "price": 7500,
+        "occupied": [37, 25, 44, 13, 2, 3]
     },
     {
         "id": 4,
@@ -61,7 +70,10 @@
         "time2": "12:50",
         "time3": "16:30",
         "time4": "19:10",
-        "back": "https://bozosports.com/wp-content/uploads/2022/07/thor18.jpeg"
+        "back": "https://bozosports.com/wp-content/uploads/2022/07/thor18.jpeg",
+        "movieName": "THOR: Love and Thunder",
+        "price": 8500,
+        "occupied": [10, 5, 2, 4, 9, 22]
     },
     {
         "id": 5,
@@ -77,7 +89,10 @@
         "time2": "12:40",
         "time3": "15:50",
         "time4": "20:10",
-        "back": "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/07/Brad-Pitt-Bullet-Train-Dolby-Poster.jpg"
+        "back": "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/07/Brad-Pitt-Bullet-Train-Dolby-Poster.jpg",
+        "movieName": "Bullet Train IMAX",
+        "price": 8200,
+        "occupied": [20, 12, 13, 14, 21, 22]
     },
     {
         "id": 6,
@@ -93,7 +108,10 @@
         "time2": "13:50",
         "time3": "16:30",
         "time4": "19:30",
-        "back": "https://i.ytimg.com/vi/vP6Amc2UMuo/maxresdefault.jpg"
+        "back": "https://i.ytimg.com/vi/vP6Amc2UMuo/maxresdefault.jpg",
+        "movieName": "Paradise Highway",
+        "price": 7800,
+        "occupied": [10, 12, 50, 33, 28, 47]
     },
     {
         "id": 7,
@@ -109,7 +127,10 @@
         "time2": "13:30",
         "time3": "16:30",
         "time4": "18:10",
-        "back": "https://i.ytimg.com/vi/Z70CNV31Uqc/maxresdefault.jpg"
+        "back": "https://i.ytimg.com/vi/Z70CNV31Uqc/maxresdefault.jpg",
+        "movieName": "Саран Хийл",
+        "price": 8100,
+        "occupied": [9, 41, 35, 11, 65, 26]
     },
     {
         "id": 8,
@@ -125,6 +146,9 @@
         "time2": "13:30",
         "time3": "16:10",
         "time4": "20:30",
-        "back": "https://otakukart.com/wp-content/uploads/2022/04/Room-203-feature.jpeg"
+        "back": "https://otakukart.com/wp-content/uploads/2022/04/Room-203-feature.jpeg",
+        "movieName": "Room 203",
+        "price": 7600,
+        "occupied": [5, 6, 10, 20, 21, 22]
     }
 ]

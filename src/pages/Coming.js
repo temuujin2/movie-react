@@ -3,49 +3,52 @@ import { MovieDataContext1 } from "../newContext"
 import './Style.css'
 import React, { useState } from 'react'
 import clsx from 'clsx'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 const movies = [
     {
       name: 'Super Pets',
       price: 7000,
-      occupied: [20, 21, 30, 1, 2, 8],
+      occupied: [20, 21, 30, 1, 2, 8]
     },
     {
       name: 'Самуурайн Түүх',
       price: 8000,
-      occupied: [9, 41, 35, 11, 65, 26],
+      occupied: [9, 41, 35, 11, 65, 26]
     },
     {
       name: 'Minoins 2: The Rise of Gru',
       price: 7500,
-      occupied: [37, 25, 44, 13, 2, 3],
+      occupied: [37, 25, 44, 13, 2, 3]
     },
     {
       name: 'THOR: Love and Thunder',
       price: 8000,
-      occupied: [10, 5, 2, 4, 9, 22],
+      occupied: [10, 5, 2, 4, 9, 22]
     },
     {
       name: 'Bullet Train IMAX',
       price: 7900,
-      occupied: [20, 12, 13, 14, 21, 22],
+      occupied: [20, 12, 13, 14, 21, 22]
     },
     {
       name: 'Paradise Highway',
       price: 7400,
-      occupied: [10, 12, 50, 33, 28, 47],
+      occupied: [10, 12, 50, 33, 28, 47]
     },
     {
       name: 'Саран Хийл',
       price: 8000,
-      occupied: [9, 41, 35, 11, 65, 26],
+      occupied: [9, 41, 35, 11, 65, 26]
     },
     {
       name: 'Room 203',
       price: 7200,
-      occupied: [5, 6, 10, 20, 21, 22],
+      occupied: [5, 6, 10, 20, 21, 22]
     }
   ]
+
   
 const seats = Array.from({ length: 8 * 8 }, (_, i) => i)
 
@@ -83,7 +86,7 @@ export function Coming() {
             </div>
             <div className="box-c1">
             <div className="times">
-                <button className="time" onClick={()=> setTime()}>{isData1[6]}</button>
+                <button className="time">{isData1[6]}</button>
                 <div className="time ">{isData1[7]}</div>
                 <div className="time ">{isData1[8]}</div>
                 <div className="time ">{isData1[9]}</div>
@@ -114,6 +117,8 @@ export function Coming() {
                             
                             <input type="text" placeholder="Хүүхэд"/>
                           </label>
+
+
                           <button>Мэдээлэл оруулах</button>
                           
 
@@ -152,6 +157,7 @@ export function Coming() {
                              <li>Захиалагчийн нэр: <span>{a.name}</span></li>
                              <li>Захиалагчийн утас: <span>{a.phone}</span></li>
                              <li>Захиалагчийн имэйл: <span>{a.email}</span></li>
+                             <li>time: <span>{a.time}</span></li>
                           </div>)}
                         </div>
                         </p>
@@ -163,6 +169,7 @@ export function Coming() {
     )
 }
 function Movies({ movie, onChange }) {
+  const { isData1, setIsData1 } = MovieDataContext1()
     return (
       <div className="Movies">
         <label htmlFor="movie">Киногоо сонгох</label>
@@ -192,7 +199,7 @@ function Movies({ movie, onChange }) {
           <span className="seat" /> <small>Хоосон суудал</small>
         </li>
         <li>
-          <span className="seat selected" /> <small>Сонгосон</small>
+          <span className="seat selected" /> <small>Боломжит</small>
         </li>
         <li>
           <span className="seat occupied" /> <small>Сонгодсон суудал</small>
