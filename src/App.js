@@ -13,6 +13,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Booking } from "./pages/Booking";
 import { Coming } from "./pages/Coming";
+import { Login } from './pages/Loging';
 
 
 export default function App() {
@@ -46,6 +47,9 @@ export default function App() {
             <li>
               <Link to="/coming">Холбоо барих</Link>
             </li>
+            <li>
+              <Link to="/login">Нэвтрэх</Link>
+            </li>
           </ul>
           <div>
             <input type="searchbox" placeholder='Search...'></input>
@@ -60,6 +64,7 @@ export default function App() {
 
           <Route path="/About" element={<About />} />
           <Route path="/Coming" element={<Coming />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
 
         
