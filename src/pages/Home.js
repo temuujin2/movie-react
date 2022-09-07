@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MovieDataContext1 } from "../newContext"
 import ReactPlayer from 'react-player'
+import { Button, Box, AppBar } from '@mui/material';
+import { fontSize } from '@mui/system';
+
 
 
 export const Home = ({ data }) => {
@@ -45,17 +48,17 @@ export const Home = ({ data }) => {
                             </div>
 
 
-                            <div className='btn-s'>
+                            <Box className='btn-s' display="flex" flexDirection="column">
 
-                                <button onClick={() => { setIsData1(arr); setIsActive(true) }} style={{ left: "10px", background: "rgb(0, 174, 255)" }}>
+                                <Button variant="contained" color="success" onClick={() => { setIsData1(arr); setIsActive(true) }} style={{marginLeft:"10px", fontSize: "11px"}} >
                                     Дэлгэрэнгүй
-                                </button>
+                                </Button>
 
-                                <button className='btn-s2' onClick={() => { setIsData1(arr); setIsActive1(true) }}>
+                                <Button variant="contained" className='btn-s2' onClick={() => { setIsData1(arr); setIsActive1(true) }} style={{marginLeft:"120px", fontSize: "11px"}}>
                                         Захиалах
-                                </button>
+                                </Button>
                                 
-                            </div>
+                            </Box>
                         </div>
                     )
                 })}
